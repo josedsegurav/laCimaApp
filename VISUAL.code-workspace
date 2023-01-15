@@ -1,0 +1,63 @@
+{
+	"folders": [
+		{
+			"name": "VISUAL",
+			"path": "../../../PERSONAL/WEBDEV/MUNDOSE/VISUAL"
+		},
+		{
+			"name": "GIT",
+			"path": "../../../PERSONAL/WEBDEV/MUNDOSE/GIT"
+		},
+		{
+			"name": "LA_CIMA",
+			"path": "../../../PERSONAL/WEBDEV/LA_CIMA"
+		},
+		{
+			"name": "proyecto1",
+			"path": "C:/XAMPP/htdocs/proyecto1"
+		},
+		{
+			"name": "proyecto2",
+			"path": "C:/XAMPP/htdocs/proyecto2"
+		},
+		{
+			"name": "proyecto_laravel",
+			"path": "C:/XAMPP/htdocs/proyecto_laravel"
+		},
+		{
+			"name": "proyecto2021",
+			"path": "C:/XAMPP/htdocs/proyecto2021"
+		},
+		{
+			"name": "WEB_LACIMA",
+			"path": "../WEB_LACIMA"
+		},
+		{
+			"path": "C:/XAMPP/htdocs/mundose"
+		},
+		{
+			"path": "../../../PERSONAL/WEBDEV/MUNDOSE/JS/PRUEBA"
+		},
+		{
+			"path": "../../../PERSONAL/WEBDEV/MUNDOSE/JS/APP/my-app"
+		},
+		{
+			"path": "../../../PERSONAL/WEBDEV/MUNDOSE/PROYECTO"
+		},
+		{
+			"path": "C:/XAMPP/htdocs/PIN"
+		},
+		{
+			"path": "C:/Users/josed/my-app"
+		},
+		{
+			"path": "../../../PERSONAL/WEBDEV/Web development/keeper-app-part-1-starting"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "WEB_LACIMA"
+	}
+}
