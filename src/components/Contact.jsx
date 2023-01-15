@@ -5,7 +5,7 @@ import TextArea from "./TextArea";
 function ContactForm() {
   return (
     <section id="contact">
-      <h3>Contáctanos</h3>
+      <h2>Contáctanos</h2>
       <form action="">
         <ContactInput
           labelFor="name"
@@ -48,8 +48,8 @@ function ContactForm() {
           labelText="Mensaje"
           textName="mensaje"
           textId="message"
-          textCols="30"
-          textRows="10"
+          textCols="20"
+          textRows="3"
         />
 
         <input type="submit" value="Enviar" />

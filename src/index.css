@@ -6,6 +6,7 @@ html {
   body {
     margin: 0;
     --img-url: "props.imgUrl";
+    font-family: "Montserrat", sans-serif;
   }
   
   a {
@@ -128,6 +129,10 @@ html {
     .sidepanel {
       margin-top: 4%;
     }
+  }
+
+  .link {
+    color: #fff;
   }
   
   .sidepanel a {
@@ -285,7 +290,7 @@ html {
   }
   @media (min-width: 1024px) {
     h2 {
-      font-size: 2.7rem;
+      font-size: 2rem;
       padding: 2% 0;
       width: 40%;
     }
@@ -359,7 +364,7 @@ html {
 } 
 @media (min-width: 1024px) {
   .grid_item {
-    width: 30%;
+    width: 23%;
 
   }
 }
@@ -428,7 +433,7 @@ html {
 }
 @media (min-width: 1024px) {
   .step_p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -454,7 +459,7 @@ width: 80%;
  
   }
   .steps_grid .far, .steps_grid .fas {
-    font-size: 8rem;
+    font-size: 6rem;
   }
 }
 @media (min-width: 1024px) {
@@ -465,7 +470,7 @@ width: 80%;
 }
 
 .stepsitem_div {
-  width: 100%;
+  width: 85%;
 }
 
 .stepgrid_item1 {
@@ -491,8 +496,9 @@ width: 80%;
 }
 
 #contact {
-  width: 90%;
-  padding: 2% 5%;
+  width: 85%;
+  margin: 0 auto;
+  padding: 2%;
 }
 @media (min-width: 600px) {
   #contact h3 {
@@ -510,8 +516,9 @@ width: 80%;
     flex-direction: column;
     align-items: center;
   }
-  #contact h3 {
+  #contact h2 {
     font-size: 2rem;
+    margin-bottom: 3%;
   }
 }
 

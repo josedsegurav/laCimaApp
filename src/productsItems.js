@@ -19,16 +19,16 @@ const productsItems = [
     name: ".Bocaditos.",
     imgUrl: "images/4.jpg",
   },
-  {
-    id: 5,
-    name: ".Mead.",
-    imgUrl: "images/5.jpg",
-  },
-  {
-    id: 6,
-    name: ".Aceites Esenciales.",
-    imgUrl: "images/6.jpg",
-  },
+  // {
+  //   id: 5,
+  //   name: ".Mead.",
+  //   imgUrl: "images/5.jpg",
+  // },
+  // {
+  //   id: 6,
+  //   name: ".Aceites Esenciales.",
+  //   imgUrl: "images/6.jpg",
+  // },
 ];
 
 export default productsItems;

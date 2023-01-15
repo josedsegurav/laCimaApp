@@ -5,14 +5,14 @@ function Footer() {
   return (
     <footer>
       <section class="footer">
-        <a class="footer_logo">
+        <a className="footer_logo">
           <img
-            class="footer_logo__img"
+            className="footer_logo__img"
             src="/images/AA.png"
             alt="Logo_footer"
           />
         </a>
-        <div class="footer_social">
+        <div className="footer_social">
         <SocialMediaLink linkRef="https://www.facebook.com/lacimaonline" icon="fab fa-facebook"/>
         <SocialMediaLink linkRef="https://www.instagram.com/lacimaabastos/?utm_medium=copy_link" icon="fab fa-instagram-square"/>
         <SocialMediaLink linkRef="https://wa.me/593963259369" icon="fab fa-whatsapp"/>

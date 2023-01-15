@@ -135,6 +135,10 @@ p {
   }
 }
 
+.link {
+  color: #fff;
+}
+
 .sidepanel a {
   text-decoration: none;
   display: block;
