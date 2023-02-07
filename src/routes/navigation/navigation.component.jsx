@@ -1,14 +1,23 @@
-import { Fragment } from "react";
+import { Fragment, useContext } from "react";
 import { Outlet, Link } from "react-router-dom";
 
 
 import { useState } from "react";
 import SidePanel from "../../components/SidePanel";
 import HeaderImg from "../../components/HeaderImg";
+import CartDropdown from "../../components/cart-dropdown/cart-dropdown.component";
+import { UserContext } from "../../context/user.context";
+import { signUserOut } from "../../firebase/firebase.utils";
+import { CartContext } from "../../context/cart.context";
+
 
 function Navigation () {
 
+  const { currentUser } = useContext(UserContext);
+  const { isCartOpen, setIsCartOpen } = useContext(CartContext);
   const [navMenu, setNavMenu] = useState(false);
+
+  const toggleIsCartopen = () => setIsCartOpen(!isCartOpen)
 
   function openNav() {
     setNavMenu(true);
@@ -27,7 +36,17 @@ function Navigation () {
     
     <HeaderImg className="navlogocompleto_img" src="/images/Asset 3@2x.png" alt="LogoCompleto" />
     <div>
-    <Link to="/auth" >Log In</Link>
+
+    {currentUser ? (
+      <span onClick={signUserOut} >Sign Out</span>
+    ) : (
+      <Link to="/auth" >Log In</Link>
+    )}
+
+      <span className="fas fa-shopping-cart fa-2x" onClick={toggleIsCartopen} ></span>
+      
+      {isCartOpen && <CartDropdown /> }
+
     <button
       className="fas fa-bars fa-2x"
       onClick={() => openNav()}
