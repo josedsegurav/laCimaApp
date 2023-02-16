@@ -14,7 +14,7 @@ import { CartContext } from "../../context/cart.context";
 function Navigation () {
 
   const { currentUser } = useContext(UserContext);
-  const { isCartOpen, setIsCartOpen } = useContext(CartContext);
+  const { isCartOpen, setIsCartOpen, cartCount } = useContext(CartContext);
   const [navMenu, setNavMenu] = useState(false);
 
   const toggleIsCartopen = () => setIsCartOpen(!isCartOpen)
@@ -43,7 +43,7 @@ function Navigation () {
       <Link to="/auth" >Log In</Link>
     )}
 
-      <span className="fas fa-shopping-cart fa-2x" onClick={toggleIsCartopen} ></span>
+      <span className="fas fa-shopping-cart fa-2x" onClick={toggleIsCartopen} >{cartCount}</span>
       
       {isCartOpen && <CartDropdown /> }
 
