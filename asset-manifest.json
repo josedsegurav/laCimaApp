@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/laCimaApp/static/css/main.706ff547.css",
+    "main.js": "/laCimaApp/static/js/main.f8dae779.js",
+    "static/js/787.2008d9d1.chunk.js": "/laCimaApp/static/js/787.2008d9d1.chunk.js",
+    "static/media/frambuesa.png": "/laCimaApp/static/media/frambuesa.b7ba4b6603449767cc3f.png",
+    "index.html": "/laCimaApp/index.html",
+    "main.706ff547.css.map": "/laCimaApp/static/css/main.706ff547.css.map",
+    "main.f8dae779.js.map": "/laCimaApp/static/js/main.f8dae779.js.map",
+    "787.2008d9d1.chunk.js.map": "/laCimaApp/static/js/787.2008d9d1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.706ff547.css",
+    "static/js/main.f8dae779.js"
+  ]
+}
