@@ -8,7 +8,7 @@ const addCartItem = (cartItems, productToAdd) => {
   if (existingCartItem) {
     return cartItems.map((cartItem) =>
       cartItem.id === productToAdd.id
-        ? { ...cartItem, quantity: cartItem.quantity + 1 }
+        ? { ...cartItem, quantity: cartItem.quantity + 1,}
         : cartItem
     );
   }
@@ -68,8 +68,8 @@ export const CartProvider = ({ children }) => {
     setCartTotal(newCheckoutTotal);
   }, [cartItems]);
 
-  const addItemToCart = (productToAdd) => {
-    setCartItems(addCartItem(cartItems, productToAdd));
+  const addItemToCart = (productToAdd, price) => {
+    setCartItems(addCartItem(cartItems, productToAdd, price));
   };
 
   const deleteCartItem = (productToDelete) => {
