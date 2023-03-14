@@ -7,12 +7,13 @@ import { CartContext } from "../../context/cart.context";
 import Button from "../button/button.component";
 import CartItem from "../cart-item/cart-item.component";
 
-function CartDropdown() {
+function CartDropdown(props) {
   const { cartItems } = useContext(CartContext);
 
   const navigate = useNavigate();
   const goToCheckoutHandler = () => {
     navigate("/checkout");
+    props.closeCartDropdown();
   }
   return (
     <div className="cart-dropdown-container">

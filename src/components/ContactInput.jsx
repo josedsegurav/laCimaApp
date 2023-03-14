@@ -3,7 +3,7 @@ import React from "react";
 function ContactInput(props) {
   return (
     <div>
-      <label for={props.labelFor}>{props.labelText}</label>
+      <label htmlFor={props.labelFor}>{props.labelText}</label>
       <input
         type={props.inputType}
         id={props.inputId}

@@ -4,7 +4,7 @@ function SocialMediaLink(props) {
     return (
         <div>
         <a href={props.linkRef}>
-          <i class={props.icon}></i>
+          <i className={props.icon}></i>
         </a>
       </div>
     )

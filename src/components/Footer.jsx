@@ -4,7 +4,7 @@ import SocialMediaLink from "./SocialMediaLink";
 function Footer() {
   return (
     <footer>
-      <section class="footer">
+      <section className="footer">
         <a className="footer_logo">
           <img
             className="footer_logo__img"

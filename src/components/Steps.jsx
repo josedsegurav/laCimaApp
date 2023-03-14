@@ -5,7 +5,7 @@ function Steps() {
   return (
     <section id="steps">
       <h2>¿Cómo ordenar?</h2>
-      <div class="steps_grid">
+      <div className="steps_grid">
         <StepItem
           iconLeft="fas fa-shopping-cart fa-5x"
           textRight="Elige y añade al carrito los productos que te gusten"

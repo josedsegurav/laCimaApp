@@ -45,7 +45,7 @@ function Navigation () {
 
       <span className="fas fa-shopping-cart fa-2x" onClick={toggleIsCartopen} >{cartCount}</span>
       
-      {isCartOpen && <CartDropdown /> }
+      {isCartOpen && <CartDropdown closeCartDropdown={toggleIsCartopen} /> }
 
     <button
       className="fas fa-bars fa-2x"

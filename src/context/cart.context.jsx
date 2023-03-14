@@ -8,12 +8,11 @@ const addCartItem = (cartItems, productToAdd) => {
   if (existingCartItem) {
     return cartItems.map((cartItem) =>
       cartItem.id === productToAdd.id
-        ? { ...cartItem, quantity: cartItem.quantity + 1,}
+        ? { ...cartItem, quantity: cartItem.quantity + 1}
         : cartItem
-    );
+    );    
   }
-
-  return [...cartItems, { ...productToAdd, quantity: 1 }];
+  return [...cartItems, { ...productToAdd, quantity: 1}];
 };
 
 const deleteCheckoutItem = (cartItems, productToDelete) => {
@@ -60,16 +59,18 @@ export const CartProvider = ({ children }) => {
     setCartCount(newCartCount);
   }, [cartItems]);
 
+  console.log(cartItems)
+
   useEffect(() => {
     const newCheckoutTotal = cartItems.reduce(
       (total, cartItem) => total + cartItem.price * cartItem.quantity,
       0
     );
-    setCartTotal(newCheckoutTotal);
+    setCartTotal(newCheckoutTotal.toFixed(2));
   }, [cartItems]);
 
-  const addItemToCart = (productToAdd, price) => {
-    setCartItems(addCartItem(cartItems, productToAdd, price));
+  const addItemToCart = (productToAdd) => {
+    setCartItems(addCartItem(cartItems, productToAdd));
   };
 
   const deleteCartItem = (productToDelete) => {
