@@ -2,12 +2,12 @@ import { createContext, useState, useEffect } from "react";
 
 const addCartItem = (cartItems, productToAdd) => {
   const existingCartItem = cartItems.find(
-    (cartItem) => cartItem.id === productToAdd.id
+    (cartItem) => cartItem.name === productToAdd.name
   );
 
   if (existingCartItem) {
     return cartItems.map((cartItem) =>
-      cartItem.id === productToAdd.id
+      cartItem.name === productToAdd.name
         ? { ...cartItem, quantity: cartItem.quantity + 1}
         : cartItem
     );    
@@ -17,22 +17,22 @@ const addCartItem = (cartItems, productToAdd) => {
 
 const deleteCheckoutItem = (cartItems, productToDelete) => {
   const existingCartItem = cartItems.find(
-    (cartItem) => cartItem.id === productToDelete.id
+    (cartItem) => cartItem.name === productToDelete.name
   );
 
   if (existingCartItem.quantity === 1) {
-    return cartItems.filter((cartItem) => cartItem.id !== productToDelete.id);
+    return cartItems.filter((cartItem) => cartItem.name !== productToDelete.name);
   }
 
   return cartItems.map((cartItem) =>
-    cartItem.id === productToDelete.id
+    cartItem.name === productToDelete.name
       ? { ...cartItem, quantity: cartItem.quantity - 1 }
       : cartItem
   );
 };
 
 const removeItem = (cartItems, productToRemove) =>
-  cartItems.filter((cartItem) => cartItem.id !== productToRemove.id);
+  cartItems.filter((cartItem) => cartItem.name !== productToRemove.name);
 
 export const CartContext = createContext({
   isCartOpen: false,

@@ -13,11 +13,11 @@ function CategoryPreview({ title, products }) {
     <div className="category-preview-container">
       <h4>
         <Link to={title} className="title">
-          {title}
+          {title.toUpperCase()}
         </Link>
       </h4>
-      <div className="preview">
-      {products
+      <div className="preview"> 
+      {products.filter((_, idx) => idx <4)
       .map((product) => (
         <ItemCard key={product.id} product={product} />
       ))}

@@ -32,7 +32,7 @@ function ItemCard({ product }) {
       
       </div>
       <Button name="libra" className="libra" buttonType="inverted" onClick={addProductToCart} >
-        Libra
+        {libra.name}
       </Button>
       <Button name="media" buttonType="inverted" onClick={addProductToCart} >
         Media
