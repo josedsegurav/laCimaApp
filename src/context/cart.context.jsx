@@ -59,7 +59,6 @@ export const CartProvider = ({ children }) => {
     setCartCount(newCartCount);
   }, [cartItems]);
 
-  console.log(cartItems)
 
   useEffect(() => {
     const newCheckoutTotal = cartItems.reduce(

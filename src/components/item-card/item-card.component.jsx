@@ -7,18 +7,16 @@ import Button from "../button/button.component";
 
 function ItemCard({ product }) {
   
-  const { name, libra, media, imageUrl } = product;
+  const { name, firstvariation, secondvariation, imageUrl } = product;
   
   const { addItemToCart } = useContext(CartContext);
-  
 
   const addProductToCart = (event) => {
     if(event.target.name === "libra") { 
-      addItemToCart(libra);
-
+      addItemToCart(firstvariation);
       
     } else if (event.target.name === "media"){
-      addItemToCart(media);
+      addItemToCart(secondvariation);
     }
     
   };
@@ -32,10 +30,10 @@ function ItemCard({ product }) {
       
       </div>
       <Button name="libra" className="libra" buttonType="inverted" onClick={addProductToCart} >
-        {libra.name}
+        {firstvariation.name}
       </Button>
       <Button name="media" buttonType="inverted" onClick={addProductToCart} >
-        Media
+        {secondvariation.name}
       </Button>
     </div>
   );

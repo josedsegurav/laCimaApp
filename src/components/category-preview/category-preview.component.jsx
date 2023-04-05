@@ -5,6 +5,7 @@ import "./category-preview.styles.scss"
 
 function CategoryPreview({ title, products }) {
 
+
   return (
     // <div className="grid_item item_1" style={{"--img-url":props.imgUrl}}>
     //         <a href=""><h4 className="item_link">{props.name} </h4></a>
