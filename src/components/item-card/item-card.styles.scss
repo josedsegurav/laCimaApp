@@ -14,7 +14,7 @@
     }
   
     button {
-      width: 80%;
+      width: auto;
       opacity: 0.7;
       position: absolute;
       top: 175px;
@@ -23,6 +23,10 @@
     
     .libra {
       top: 225px;
+    }
+
+    .third {
+      top: 300px;
     }
   
     &:hover {
