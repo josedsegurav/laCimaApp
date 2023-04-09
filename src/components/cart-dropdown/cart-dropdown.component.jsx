@@ -19,7 +19,7 @@ function CartDropdown(props) {
     <div className="cart-dropdown-container">
       <div>
         {cartItems.map((item) => (
-          <CartItem key={item.id} cartItem={item} />
+          <CartItem key={item.name} cartItem={item} />
         ))}
       </div>
 

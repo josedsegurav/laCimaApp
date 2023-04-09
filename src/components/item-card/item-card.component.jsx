@@ -15,6 +15,8 @@ function ItemCard({ product }) {
       addItemToCart(firstvariation);
     } else if (event.target.name === "secondvariation") {
       addItemToCart(secondvariation);
+    }else if (event.target.name === "thirdvariation"){
+      addItemToCart(thirdvariation);
     }
   };
 

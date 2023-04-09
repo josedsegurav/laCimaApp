@@ -1,7 +1,7 @@
 .category-container {
-  margin-top: 10%;
+  margin: 10% 2% 0 2%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     column-gap: 10px;
     row-gap: 50px;
   }
