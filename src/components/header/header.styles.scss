@@ -1,0 +1,53 @@
+.header_logodiv {
+    margin-top: 15%;
+    padding: 5% 15% 0;
+    width: 70%;
+  }
+  @media (min-width: 1024px) {
+    .header_logodiv {
+      background-image: url("../../../public/images/frambuesa.png");
+      background-size: 50%;
+      background-position: 100% 0%;
+      background-repeat: no-repeat;
+      margin-top: 4%;
+      padding: 5% 0 0% 5%;
+      width: 95%;
+    }
+  }
+  
+  .header__logo_img {
+    width: 100%;
+  }
+  @media (min-width: 1024px) {
+    .header__logo_img {
+      width: 40%;
+    }
+  }
+  
+  .header_text {
+    margin-bottom: 12%;
+  }
+  @media (min-width: 1024px) {
+    .header_text {
+      margin-bottom: 8%;
+      margin-top: 0;
+      display: inline-block;
+    }
+  }
+
+  .header_yogurtimg {
+    margin: 10% 0 0;
+    width: 100%;
+  }
+  @media (min-width: 600px) {
+    .header_yogurtimg {
+      bottom: 0%;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+  @media (min-width: 1024px) {
+    .header_yogurtimg {
+      display: none;
+    }
+  }

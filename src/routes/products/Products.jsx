@@ -1,12 +1,14 @@
-import ProductsCard from "../../components/ProductsCard";
+import "./products.styles.scss"
+import ProductsCard from "../../components/productscard/ProductsCard";
 import productsItems from "../../productsItems";
+import { Link } from "react-router-dom";
 
 function Products() {
 
   return (
     <section id="products">
       <h2>
-        <a href="">Productos</a>
+        <Link to="/shop">Productos</Link>
       </h2>
 
       <div className="product_grid">

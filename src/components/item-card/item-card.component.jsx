@@ -22,19 +22,24 @@ function ItemCard({ product }) {
 
   return (
     <div className="product-card-container">
-      <img src={imageUrl} alt={`${name}`} />
-      <span className="name"> {name} </span>
-
-      <div className="footer"></div>
-      <Button name="firstvariation" className="libra" buttonType="inverted" onClick={addProductToCart} >
+    <div className="button-container">
+      <Button name="firstvariation" onClick={addProductToCart} >
         {firstvariation.name}
       </Button>
-      <Button name="secondvariation" buttonType="inverted" onClick={addProductToCart} >
+      <Button name="secondvariation" onClick={addProductToCart} >
         {secondvariation.name}
       </Button>
       {thirdvariation ? (<Button name="thirdvariation" className="third" buttonType="inverted" onClick={addProductToCart} >
         {thirdvariation.name}
       </Button>) : null }
+    
+        </div>
+      <img src={imageUrl} alt={`${name}`}/>
+     
+      <span className="name"> {name} </span>
+      
+      <div className="footer"></div>
+      
     </div>
   );
 }

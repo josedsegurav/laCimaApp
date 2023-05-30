@@ -1,0 +1,92 @@
+#steps {
+    background-color: #36426A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+    
+  }
+  @media (min-width: 1024px) {
+    #steps {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 5%;
+    }
+  }
+
+  .steps_grid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: center;
+    width: 80%;
+    }
+    
+    @media (min-width: 600px) {
+      .steps_grid .far, .steps_grid .fas {
+        font-size: 7.5rem;
+      }
+    }
+    @media (min-width: 600px) {
+      .steps_grid .far, .steps_grid .fas {
+        font-size: 6rem;
+      }
+    }
+    @media (min-width: 1024px) {
+      .steps_grid p {
+        padding: 4%;
+    
+      }
+    }
+    
+    .stepsitem_div {
+      width: 85%;
+    }
+    
+    .stepgrid_item1 {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 10%;
+    }
+    
+    
+    @media (min-width: 1024px) {
+      .stepgrid_item1 {
+       
+      }
+    }
+    
+    .step_p {
+      color: #fff;
+      font-weight: 600;
+      margin: 0;
+      width: 70%;
+    }
+    @media (min-width: 600px) {
+      .step_p {
+        font-size: 1.3rem;
+      }
+    }
+    @media (min-width: 700px) {
+      .step_p {
+        font-size: 1.5rem;
+      }
+    }
+    @media (min-width: 1024px) {
+      .step_p {
+        font-size: 1.4rem;
+      }
+    }
+    
+    .far .fas{
+      font-size: 2rem;
+    }    
+
+    .step-icon{
+      font-size: 3rem;
+    }

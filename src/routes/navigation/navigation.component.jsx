@@ -1,10 +1,11 @@
+import "./navigation.styles.scss"
 import { Fragment, useContext } from "react";
 import { Outlet, Link } from "react-router-dom";
 
 
 import { useState } from "react";
-import SidePanel from "../../components/SidePanel";
-import HeaderImg from "../../components/HeaderImg";
+import SidePanel from "../../components/sidepanel/SidePanel";
+import HeaderImg from "../../components/header/HeaderImg";
 import CartDropdown from "../../components/cart-dropdown/cart-dropdown.component";
 import { UserContext } from "../../context/user.context";
 import { signUserOut } from "../../firebase/firebase.utils";
@@ -35,20 +36,20 @@ function Navigation () {
     </Link>
     
     <HeaderImg className="navlogocompleto_img" src="/images/Asset 3@2x.png" alt="LogoCompleto" />
-    <div>
+    <div className="interaction-container" >
 
     {currentUser ? (
       <span onClick={signUserOut} >Sign Out</span>
     ) : (
-      <Link to="/auth" >Log In</Link>
+      <Link className="auth-link" to="/auth" >Log In</Link>
     )}
 
-      <span className="fas fa-shopping-cart fa-2x" onClick={toggleIsCartopen} >{cartCount}</span>
+      <span className="fas fa-shopping-cart nav-icon" onClick={toggleIsCartopen} >{cartCount}</span>
       
       {isCartOpen && <CartDropdown closeCartDropdown={toggleIsCartopen} /> }
 
     <button
-      className="fas fa-bars fa-2x"
+      className="fas fa-bars nav-icon"
       onClick={() => openNav()}
     ></button>
     <SidePanel closePanel={closeNav} navIsClicked={navMenu}  />

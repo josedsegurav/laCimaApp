@@ -1,0 +1,21 @@
+#products {
+
+}
+@media (min-width: 600px) {
+  #products {
+
+  }
+}
+@media (min-width: 700px) {
+  #products {
+
+  }
+}
+@media (min-width: 1024px) {
+  #products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+}

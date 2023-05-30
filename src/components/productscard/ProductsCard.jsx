@@ -1,6 +1,6 @@
 import React from "react";
-
-import productsItems from "../productsItems"
+import "./productscard.styles.scss"
+import productsItems from "../../productsItems"
 
 function ProductsCard({ name, imgUrl }) {
   return (

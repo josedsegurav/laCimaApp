@@ -1,3 +1,4 @@
+import "./header.styles.scss"
 import HeaderImg from "./HeaderImg";
 
 function Header(props) {

@@ -1,0 +1,102 @@
+.headernav_div {
+    background-color: #36426A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    transition: top 0.3s;
+  }
+  
+  .logohome_link {
+    padding: 1%;
+    text-align: center;
+    width: 8%;
+  }
+  @media (min-width: 1024px) {
+    .logohome_link {
+      padding: 5px;
+      width: 3%;
+    }
+  }
+  
+  .navlogo_img {
+    width: 100%;
+    padding-left: 5%;
+  }
+  
+  .navlogocompleto_img {
+    width: 11%;
+  }
+  @media (min-width: 1024px) {
+    .navlogocompleto_img {
+      display: none;
+    }
+  }
+  
+.interaction-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+@media (min-width: 1024px) {
+    .interaction-container{
+        width: 20%;
+    }
+}
+
+.auth-link {
+  color: #FDCB10;
+  font-weight: 600;
+}
+
+  .fas, .far {
+    background-color: #36426A;
+    color: #FDCB10;
+    padding-right: 5px;
+    border-style: none;
+    
+  }
+
+
+.nav-icon{
+  font-size: 1.5rem;
+}
+@media (min-width: 1024px) {
+  .nav-icon{
+      font-size: 2rem;
+  }
+}
+
+  .link {
+    color: #fff;
+  }
+  
+  .sidepanel a {
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    color: #fff;
+    padding: 5% 0% 5% 7%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+  }
+  @media (min-width: 1024px) {
+    .sidepanel a {
+      font-size: 1.2rem;
+    }
+  }
+  
+  .sidepanel a:hover {
+    background-color: #FDCB10;
+  }
+
+  .panellogo_img {
+    width: 20%;
+  }
+  
+  

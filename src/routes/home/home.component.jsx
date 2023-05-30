@@ -1,7 +1,7 @@
-import Header from "../../components/Header";
+import Header from "../../components/header/Header";
 import Products from "../products/Products";
-import Steps from "../../components/Steps";
-import ContactForm from "../../components/Contact";
+import Steps from "../../components/steps/Steps";
+import ContactForm from "../../components/contact/Contact";
 import Footer from "../../components/Footer";
 
 function Home() {

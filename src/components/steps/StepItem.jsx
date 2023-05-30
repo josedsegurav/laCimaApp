@@ -1,4 +1,5 @@
 import React from "react";
+import "./steps.styles.scss"
 
 function StepItem(props) {
   return (
