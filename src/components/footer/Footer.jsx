@@ -1,5 +1,6 @@
 import React from "react";
-import SocialMediaLink from "./SocialMediaLink";
+import "./footer.styles.scss";
+import SocialMediaLink from "../socialmedia/SocialMediaLink";
 
 function Footer() {
   return (

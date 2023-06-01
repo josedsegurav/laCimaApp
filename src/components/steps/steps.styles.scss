@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 5%;
+    margin-bottom: 8%;
     
   }
   @media (min-width: 1024px) {
@@ -21,7 +22,7 @@
     flex-wrap: wrap;
     align-items: flex-start;
     align-content: center;
-    width: 80%;
+    width: 100%;
     }
     
     @media (min-width: 600px) {
@@ -64,8 +65,9 @@
     .step_p {
       color: #fff;
       font-weight: 600;
-      margin: 0;
+      margin: 0 5%;
       width: 70%;
+      font-size: 1rem;
     }
     @media (min-width: 600px) {
       .step_p {
@@ -88,5 +90,5 @@
     }    
 
     .step-icon{
-      font-size: 3rem;
+      font-size: 4rem;
     }
