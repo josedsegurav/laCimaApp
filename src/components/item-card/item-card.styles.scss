@@ -15,22 +15,54 @@
     button {
       width: auto;
       opacity: 0.7;
+      font-size: x-small;
       position: absolute;
-      top: 175px;
+      top: 5%;
+      right: 17%;
       display: none;
-    }
-    
-    .libra {
-      top: 225px;
-    }
-
-    .third {
-      top: 300px;
+      z-index: 1;
     }
   
     .button-container {
       display: none;
+
+      .second{
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 20px;
+        color: #FDCB10;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        padding: 3% 7%;
+        background-color: #36426A;
+        border: solid #FFDE82 0;
+        text-decoration: none;
+        cursor: pointer;
+        text-align: center;
+        top: 23%;
+    } 
+
+    .third{
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      border-radius: 20px;
+      color: #FDCB10;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      padding: 3% 7%;
+      background-color: #36426A;
+      border: solid #FFDE82 0;
+      text-decoration: none;
+      cursor: pointer;
+      text-align: center;
+      top: 42%;
+  } 
     }
+
+    .item-name {
+font-size: small;
+    }
+
 
     &:hover {
 
@@ -47,7 +79,7 @@
         display: flex;
       }
 
-    .footer {
+    .itemcard-footer {
       width: 100%;
       height: 5%;
       display: flex;
@@ -55,14 +87,14 @@
       font-size: 18px;
     }
   
-      // .name {
-      //   width: 90%;
-      //   margin-bottom: 15px;
-      // }
+    //  .item-name {
+    //    width: 90%;
+    //   margin-bottom: 15px;
+    //  }
   
-      // .price {
-      //   width: 10%;
-      // }
+      .price {
+        width: 10%;
+      }
     }
   }
   

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Products() {
 
   return (
-    <section id="products">
+    <section id="products" className="products-section">
       <h2>
         <Link to="/shop">Productos</Link>
       </h2>

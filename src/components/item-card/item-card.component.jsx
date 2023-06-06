@@ -26,7 +26,7 @@ function ItemCard({ product }) {
       <Button name="firstvariation" onClick={addProductToCart} >
         {firstvariation.name}
       </Button>
-      <Button name="secondvariation" onClick={addProductToCart} >
+      <Button name="secondvariation" className="second" onClick={addProductToCart} >
         {secondvariation.name}
       </Button>
       {thirdvariation ? (<Button name="thirdvariation" className="third" buttonType="inverted" onClick={addProductToCart} >
@@ -36,9 +36,9 @@ function ItemCard({ product }) {
         </div>
       <img src={imageUrl} alt={`${name}`}/>
      
-      <span className="name"> {name} </span>
+      <span className="item-name"> {name} </span>
       
-      <div className="footer"></div>
+      <div className="itemcard-footer"></div>
       
     </div>
   );
