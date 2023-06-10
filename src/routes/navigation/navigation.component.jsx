@@ -1,4 +1,5 @@
-import "./navigation.styles.scss"
+import "./navigation.styles.scss";
+import Footer from "../../components/footer/Footer";
 import { Fragment, useContext } from "react";
 import { Outlet, Link } from "react-router-dom";
 
