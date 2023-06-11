@@ -31,8 +31,8 @@ function ItemCard({ product }) {
   };
 
   return (
-    <div className="product-card-container" onClick={() => toggleButtonsDisplay()}>
-    <div className="button-container" style={{display: buttonContainerDisplay && "flex", justifyContent: buttonContainerDisplay && "center"}} >
+    <div className="product-card-container">
+    <div className="button-container" style={{display: buttonContainerDisplay && "flex", flexDirection: buttonContainerDisplay && "column", alignItems: buttonContainerDisplay && "center"}} >
       <Button name="firstvariation" className="first" onClick={addProductToCart} >
         {firstvariation.name}
         <span className="price">${firstvariation.price}</span>
@@ -45,9 +45,11 @@ function ItemCard({ product }) {
       {thirdvariation ? (<Button name="thirdvariation" className="third" buttonType="inverted" onClick={addProductToCart} >
         {thirdvariation.name} <span className="price">${thirdvariation.price}</span>
       </Button>) : null }
+
+      <span className="close" onClick={() => buttonsHide()} >✘</span>
     
         </div>
-      <img src={imageUrl} alt={`${name}`}/>
+      <img src={imageUrl} alt={`${name}`} onClick={() => toggleButtonsDisplay()}/>
      
       <span className="item-name" style={{display: buttonContainerDisplay && "none"}} > {name} </span>
       
