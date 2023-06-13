@@ -17,6 +17,7 @@ function CartDropdown(props) {
   }
   return (
     <div className="cart-dropdown-container">
+    <span className="close" onClick={() => props.closeCartDropdown()} >✘</span>
       <div>
         {cartItems.map((item) => (
           <CartItem key={item.name} cartItem={item} />

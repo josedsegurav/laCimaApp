@@ -16,7 +16,7 @@ import { CartContext } from "../../context/cart.context";
 function Navigation () {
 
   const { currentUser } = useContext(UserContext);
-  const { isCartOpen, setIsCartOpen, cartCount } = useContext(CartContext);
+  const { isCartOpen, setIsCartOpen, cartCount } = useContext(CartContext); 
   const [navMenu, setNavMenu] = useState(false);
 
   const toggleIsCartopen = () => setIsCartOpen(!isCartOpen)

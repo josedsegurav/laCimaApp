@@ -27,5 +27,11 @@
     button {
       margin-top: auto;
     }
+
+    .close {
+      align-self: flex-end;
+      color: red;
+      cursor: pointer;
+    }
   }
   

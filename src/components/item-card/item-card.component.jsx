@@ -8,9 +8,12 @@ import Button from "../button/button.component";
 function ItemCard({ product }) {
   const { name, firstvariation, secondvariation, thirdvariation, imageUrl } = product;
 
-  const { addItemToCart } = useContext(CartContext);
+  const { addItemToCart, isCartOpen, setIsCartOpen } = useContext(CartContext);
 
   const [buttonContainerDisplay, setButtonContainerDisplay] = useState(false);
+  const [buttonSelect, setButtonSelect] = useState(false);
+
+  const toggleIsCartopen = () => setIsCartOpen(true);
 
   const toggleButtonsDisplay = () => {
     setButtonContainerDisplay(!buttonContainerDisplay);
@@ -23,12 +26,19 @@ function ItemCard({ product }) {
   const addProductToCart = (event) => {
     if (event.target.name === "firstvariation") {
       addItemToCart(firstvariation);
+      buttonsHide();
+      toggleIsCartopen();
     } else if (event.target.name === "secondvariation") {
       addItemToCart(secondvariation);
+      buttonsHide();
+      toggleIsCartopen();
     }else if (event.target.name === "thirdvariation"){
       addItemToCart(thirdvariation);
+      buttonsHide();
+      toggleIsCartopen();
     }
   };
+
 
   return (
     <div className="product-card-container">
