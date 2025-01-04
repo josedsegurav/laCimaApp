@@ -125,7 +125,7 @@ p {
   top: 0;
   right: 0;
   background-color: #36426A;
-  overflow-x: hidden;
+  overflow-x: hidden; 
   padding: 2% 0%;
   transition: 0.5s;
 }

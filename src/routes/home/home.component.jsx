@@ -3,6 +3,7 @@ import Products from "../products/Products";
 import Steps from "../../components/steps/Steps";
 import ContactForm from "../../components/contact/Contact";
 import Footer from "../../components/footer/Footer";
+import Chatbot from "../../components/chatbot/chatbot.component";
 
 function Home() {
   return (

@@ -50,6 +50,7 @@ function Navigation () {
       {isCartOpen && <CartDropdown closeCartDropdown={toggleIsCartopen} /> }
 
     <button
+      aria-hidden="false"
       className="fas fa-bars nav-icon"
       onClick={() => openNav()}
     ></button>
